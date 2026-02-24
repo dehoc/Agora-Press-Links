@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agora Press</title>
+    <link rel="icon" type="image/png" href="agorapress.png">
+    <style>
+        /* CORE VARIABLES based on your logo colors */
+        :root {
+            --bg-dark: #121418;       /* Very dark slate/black from logo background */
+            --bg-gradient: #23272e;   /* Slightly lighter for gradient */
+            --text-cream: #F0E6D2;    /* The cream color from the logo text */
+            --btn-hover: #e0d3b8;     /* Slightly darker cream for hover state */
+        }
+
+        /* RESET & BASE STYLES */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            background: linear-gradient(180deg, var(--bg-dark) 0%, var(--bg-gradient) 100%);
+            color: var(--text-cream);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        /* CONTAINER - Limits width on PC, full width on Mobile */
+        .container {
+            width: 100%;
+            max-width: 480px; /* Standard "Linktree" width */
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        /* LOGO STYLING */
+        .logo {
+            width: 120px;
+            height: auto;
+            border-radius: 12px; /* Slight rounding looks modern */
+            margin-bottom: 1rem;
+            /* Optional: slight shadow to pop off background */
+            box-shadow: 0 4px 20px rgba(0,0,0,0.5); 
+        }
+
+        /* TITLE STYLING */
+        h1 {
+            font-family: 'Garamond', 'Times New Roman', serif; /* Matching the Serif logo vibe */
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            letter-spacing: 1px;
+            font-weight: normal;
+        }
+
+        /* LINK BUTTONS */
+        .link-list {
+            display: flex;
+            flex-direction: column;
+            gap: 16px; /* Space between buttons */
+        }
+
+        .link-btn {
+            display: block;
+            width: 100%;
+            padding: 16px 20px;
+            text-decoration: none;
+            
+            /* Button Colors: Cream background, Dark text */
+            background-color: var(--text-cream);
+            color: var(--bg-dark);
+            
+            font-weight: 600;
+            border-radius: 50px; /* Pill shape */
+            transition: all 0.3s ease;
+            border: 2px solid var(--text-cream);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+        }
+
+        /* HOVER EFFECTS */
+        .link-btn:hover {
+            background-color: transparent;
+            color: var(--text-cream);
+            transform: translateY(-2px); /* Slight lift */
+            box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+        }
+
+        /* FOOTER */
+        footer {
+            margin-top: 3rem;
+            font-size: 0.8rem;
+            opacity: 0.6;
+        }
+
+        .description {
+            font-family: 'Garamond', 'Times New Roman', serif; /* Matches title font */
+            font-size: 1.1rem;
+            line-height: 1.4;
+            color: var(--text-cream);
+            margin-top: -1.5rem; /* Pulls text closer to the title */
+            margin-bottom: 2rem;
+            max-width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+            opacity: 0.9;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <img src="agorapress.png" alt="Agora Press Logo" class="logo">
+        
+        <h1>Agora Press</h1>
+        <p class="description">Agora Press is a youth-led nonprofit and nonpartisan news organization working towards a more informed future.</p>
+
+        <div class="link-list">
+            <a href="mailto:contact@theagorapress.com" class="link-btn">Contact Us (contact@theagorapress.com)</a>
+            
+            <a href="https://theagorapress.com" target="_blank" class="link-btn">Articles and Agora Press Website</a>
+
+            <a href="https://youtube.com/@TheAgoraPress" target="_blank" class="link-btn">YouTube</a>
+
+            <a href="https://instagram.com/the_agora_press/" target="_blank" class="link-btn">Instagram</a>
+
+            <a href="https://open.spotify.com/YOUR_LINK_HERE" target="_blank" class="link-btn">Spotify</a>
+
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLScJmPOLpVIcXduL5CpojOd5JaJUfOFDDBSFDQdyKxJo_wFnQA/viewform?usp=dialog" target="_blank" class="link-btn">Become a Member</a>
+        </div>
+
+        <footer>
+            &copy; 2026 Agora Press
+        </footer>
+    </div>
+
+</body>
+</html>
