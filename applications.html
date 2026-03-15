@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agora Press Applications</title>
+    <link rel="icon" type="image/png" href="agorapress.png">
+    <style>
+        :root {
+            --bg-dark: #121418;
+            --bg-gradient: #23272e;
+            --text-cream: #F0E6D2;
+            --btn-hover: #e0d3b8;
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            background: linear-gradient(180deg, var(--bg-dark) 0%, var(--bg-gradient) 100%);
+            color: var(--text-cream);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .container {
+            width: 100%;
+            max-width: 480px;
+            text-align: center;
+            padding: 2rem 0;
+        }
+        .logo {
+            width: 120px;
+            height: auto;
+            border-radius: 12px;
+            margin-bottom: 1rem;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+        }
+        h1 {
+            font-family: 'Garamond', 'Times New Roman', serif;
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            letter-spacing: 1px;
+            font-weight: normal;
+        }
+        .description {
+            font-family: 'Garamond', 'Times New Roman', serif;
+            font-size: 1.1rem;
+            line-height: 1.4;
+            color: var(--text-cream);
+            margin-top: -1.5rem;
+            margin-bottom: 2rem;
+            max-width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+            opacity: 0.9;
+        }
+        .form-embed {
+            margin-top: 2rem;
+            width: 100%;
+            min-height: 600px;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+        }
+        .link-btn {
+            display: block;
+            width: 100%;
+            padding: 16px 20px;
+            text-decoration: none;
+            background-color: var(--text-cream);
+            color: var(--bg-dark);
+            font-weight: 600;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            border: 2px solid var(--text-cream);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+            margin-top: 2rem;
+        }
+        .link-btn:hover {
+            background-color: transparent;
+            color: var(--text-cream);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="agorapress.png" alt="Agora Press Logo" class="logo">
+        <h1>Agora Press Applications</h1>
+        <p class="description">Agora Press is always open to new applicants and positions open up frequently.</p>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLScJmPOLpVIcXduL5CpojOd5JaJUfOFDDBSFDQdyKxJo_wFnQA/viewform?usp=dialog" target="_blank" class="link-btn">Fill out the application form</a>
+    </div>
+</body>
+</html>
